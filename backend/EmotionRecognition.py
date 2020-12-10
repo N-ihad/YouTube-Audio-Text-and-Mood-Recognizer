@@ -72,18 +72,19 @@ model = FastTextSocialNetworkModel(tokenizer=tokenizer)
 
 messages = []
 
-for filename in os.listdir("./sentences/"):
-    if filename.endswith(".txt"):
-        with open("./sentences/" + filename, 'r') as file:
-            messages.append(file.read().replace('\n', ''))
+def recognizeEmotion():
+    for filename in os.listdir("./sentences/"):
+        if filename.endswith(".txt"):
+            with open("./sentences/" + filename, 'r') as file:
+                messages.append(file.read().replace('\n', ''))
 
-results = model.predict(messages, k=2)
+    results = model.predict(messages, k=2)
 
-for message, sentiment, filename in zip(messages, results, os.listdir("./sentences/")):
-    dic = sentiment
-    dicValues = list(sentiment.values())
-    certaintyPercent = max(dicValues)
-    mood = list(dic.keys())[list(dic.values()).index(certaintyPercent)]
-    f = open("./emotions/" + filename[:-4] + "_emotion" + ".txt", "w+")
-    f.write(str(mood) + "\n" + str(certaintyPercent))
-    f.close()
+    for message, sentiment, filename in zip(messages, results, os.listdir("./sentences/")):
+        dic = sentiment
+        dicValues = list(sentiment.values())
+        certaintyPercent = max(dicValues)
+        mood = list(dic.keys())[list(dic.values()).index(certaintyPercent)]
+        f = open("./emotions/" + filename[:-4] + "_emotion" + ".txt", "w+")
+        f.write(str(mood) + "\n" + str(certaintyPercent))
+        f.close()
