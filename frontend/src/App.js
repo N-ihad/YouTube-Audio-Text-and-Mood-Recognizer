@@ -150,7 +150,7 @@ function App() {
           </Button>
         </div>
         <div style={{ width: "600px", marginBottom: "20px" }}>
-          <label htmlFor="example1">Фильтрация семплов по эмоции</label>
+          <label htmlFor="example1">Фильтрация семплов по тону. Возможные: positive, negative, neutral, speech </label>
           <Form.Control
             size="lg"
             type="text"
