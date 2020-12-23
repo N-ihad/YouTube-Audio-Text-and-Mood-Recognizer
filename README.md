@@ -23,7 +23,7 @@ npm start
 [![Docker](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg?maxAge=2592000)]()
 
 ## Запуск
-
+Прописать следующие команды в директории backend
 ```sh
 python -m pip install -r requirements.txt
 python app.py
