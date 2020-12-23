@@ -8,11 +8,10 @@ YT video decomposition into sentences: audio, text, mood
 
 <img alt="Logo" align="right" src="https://create-react-app.dev/img/logo.svg" width="20%" />
 
-## Quick Overview
-
+## Запуск
+Прописать следующие команды в директории frontend
 ```sh
-npx create-react-app my-app
-cd my-app
+npm install
 npm start
 ```
 
@@ -23,19 +22,10 @@ npm start
 [![Code Climate](https://codeclimate.com/github/brennv/flask-app/badges/gpa.svg)](https://codeclimate.com/github/brennv/flask-app)
 [![Docker](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg?maxAge=2592000)]()
 
-## Getting started
+## Запуск
 
-Install [docker](https://docs.docker.com/engine/installation/) and run:
-
-```shell
-docker-compose up
-# docker-compose stop
-```
-
-Otherwise, for the standalone web service:
-
-```shell
-pip install -r requirements.txt
+```sh
+python -m pip install -r requirements.txt
 python app.py
 ```
 
