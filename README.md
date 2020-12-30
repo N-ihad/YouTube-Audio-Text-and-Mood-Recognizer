@@ -1,5 +1,6 @@
 # YT-audio-text-mood-recognizer
 YT video decomposition into sentences: audio, text, mood
+![](https://sun9-31.userapi.com/impg/C57IUoLU3-LPuI2Qc5JdMj0Yb-hGQeb7CNk39g/FjERCclENpA.jpg?size=1942x1100&quality=96&proxy=1&sign=b0b0934cd283206fd8a4e06021f166b1&type=album)
 
 # ВУЗ: Санкт-Петербургский Государственный Университет
 # Название курса: Основы Grid и Cloud вычислений
